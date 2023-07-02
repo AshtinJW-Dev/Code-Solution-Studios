@@ -1,10 +1,3 @@
-/**
-* Template Name: Green
-* Updated: May 30 2023 with Bootstrap v5.3.0
-* Template URL: https://bootstrapmade.com/green-free-one-page-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
@@ -135,7 +128,7 @@
   }, true)
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   * Scroll with ofset on links with a class name .scrollto
    */
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
@@ -179,6 +172,42 @@
    * Clients Slider
    */
   new Swiper('.clients-slider', {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 40
+      },
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 60
+      },
+      640: {
+        slidesPerView: 4,
+        spaceBetween: 80
+      },
+      992: {
+        slidesPerView: 6,
+        spaceBetween: 120
+      }
+    }
+  });
+
+  /**
+   * Tech Slider
+   */
+  new Swiper('.tech-slider', {
     speed: 400,
     loop: true,
     autoplay: {
@@ -264,3 +293,29 @@
   });
 
 })()
+
+
+// contact button validation
+function submitForm(event) {
+  event.preventDefault(); // Prevent form submission (for testing)
+
+  var form = document.getElementById('contact-form');
+
+  if (form.checkValidity()) {
+    event.target.classList.add('button--loading'); // Add loading class to the button
+    form.submit(); // Submit the form
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  var form = document.getElementById('contact-form');
+  var button = document.getElementById('button');
+
+  form.addEventListener('input', function() {
+    if (form.checkValidity()) {
+      button.removeAttribute('disabled'); // Enable the button
+    } else {
+      button.setAttribute('disabled', true); // Disable the button
+    }
+  });
+});
