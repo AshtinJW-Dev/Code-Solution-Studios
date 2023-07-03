@@ -687,6 +687,24 @@ section {
 margin-bottom: -20rem;
 }
 
+@media(max-width:986px){
+  .about .right{
+    margin-bottom: -18rem;
+  }
+  .about .content{
+    padding-bottom: 17rem;
+  }
+}
+
+@media(min-width:390px){
+  .about .right{
+    padding-bottom: 5rem;
+  }
+  .about .content{
+    padding-top: 10rem;
+  }
+}
+
 .green.flower{
   height: 5rem;
 
@@ -808,7 +826,7 @@ margin-bottom: -20rem;
 
 .bundles .card__bottom li {
   color: #eee;
-  font-size: 11px;
+  font-size: .7rem;
   line-height: 1.3em;
 }
 
@@ -1515,6 +1533,10 @@ client.row:after {
 .contact .info .social-links a:hover {
   background: #5cb874;
   color: #fff;
+}
+
+.info .map iframe{
+  width: 100%;
 }
 
 .contact .info .email:hover i,
