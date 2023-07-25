@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/favicon/CSS_Logo-no_text-removebg-preview.png" rel="icon">
+  <link href="assets/favicon/android-chrome-512x512.png" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -28,6 +28,16 @@
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DCRLQ1ZMT1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DCRLQ1ZMT1');
+</script>
+
 <body>
 
   <!-- ======= Top Bar ======= -->
@@ -42,7 +52,7 @@
         <a href="https://www.facebook.com/codesolutionstudios/" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
         <a href="https://www.instagram.com/codesolutionstudios/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
         <a href="https://www.youtube.com/@CodeSolutionStudios" class="youtube" target="_blank"><i class="bi bi-youtube"></i></a>
-        <a href="https://www.linkedin.com/company/96412352/admin/feed/posts/?feedType=following" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></i></a>
+        <a href="https://www.linkedin.com/company/96412352/admin/feed/posts/?feedType=following" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
       </div>
     </div>
   </section>
@@ -53,25 +63,66 @@
 
       <h1 class="logo me-auto"><a href="index.html">Code Solution Studios</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#bundles">Bundles</a></li>
-          <li><a class="nav-link scrollto" href="#tech">Tech</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#team">Reviews</a></li> -->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
+      
+      <nav id="navbar" class="navbar"><ul><li><a class="nav-link scrollto active" href="#hero">Home</a></li><li><a class="nav-link scrollto" href="#about">About</a></li><li><a class="nav-link scrollto" href="#tech">Tech</a></li><li class="dropdown"><a href="#bundles"><span>Bundles</span> <i class="bi bi-chevron-down"></i></a><ul><li><a href="./bundle-pages/fw-bundle.html">Whole Website Waxed</a></li><li><a href="./bundle-pages/sms-bundle.html">Social Media Supercharge</a></li><li><a href="./bundle-pages/gf-bundle.html">Digital Marketing Madness</a></li></ul></li><li class="dropdown"><a href="#services"><span>Services</span><i class="bi bi-chevron-down"></i></a><ul><li><a href="./pricing-pages/wd-price.html">Web Developement</a></li><li><a href="./pricing-pages/gd-price.html">Graphic Design</a></li><li><a href="./pricing-pages/dm-price.html">Digital Marketing</a></li><li><a href="./pricing-pages/seo-price.html">SEO</a></li><li><a href="./pricing-pages/smm-price.html">Social Media Management</a></li><li><a href="./pricing-pages/vcc-price.html">Video & Content Creation</a></li><li><a href="./pricing-pages/mp-price.html">Maintenance Plans</a></li><li><a href="./pricing-pages/ar-price.html">Analytics & Reporting</a></li></ul></li><li class="dropdown"><a href="#portfolio"><span>Portfolio</span> <i class="bi bi-chevron-down"></i></a><ul><li><a href="./port-pages/videos-page.html">Videos</a></li></ul></li><!-- <li><a class="nav-link scrollto" href="#team">Reviews</a></li> --><li><a class="nav-link scrollto" href="#contact">Contact</a></li><li><a><button class="getstarted " id="openFormBtn">Get Started</button></a></li></ul><i class="bi bi-list mobile-nav-toggle"></i></nav><!-- .navbar -->
+      </div>
+    
   </header><!-- End Header -->
+
+  <!-- popup button -->
+
+
+  <div id="popupForm" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      
+      <form action="" method="" id="contact-form">
+        <div class="container">
+          <div class="contact-box">
+            <div class="main">
+              <h2>Book A Free 30 Minute Consultation</h2>
+              <!-- Google Calendar Appointment Scheduling begin -->
+              <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1KAD5Hz2a_xMkduTrmr5f4BJ5NpeilosW9Tk4h5MYaQHe05Rf6ynPpl6G5-WzkFXALdOFbNkVV?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+              <!-- end Google Calendar Appointment Scheduling -->
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+<script>
+
+// Get the modal element
+var modal = document.getElementById("popupForm");
+
+// Get the button that opens the modal
+var openBtn = document.getElementById("openFormBtn");
+
+// Get the close button element
+var closeBtn = document.getElementsByClassName("close")[0];
+
+// Function to open the modal
+function openModal() {
+  modal.style.display = "block";
+}
+
+// Function to close the modal
+function closeModal() {
+  modal.style.display = "none";
+}
+
+// Event listeners
+openBtn.addEventListener("click", openModal);
+closeBtn.addEventListener("click", closeModal);
+window.addEventListener("click", function(event) {
+  if (event.target === modal) {
+    closeModal();
+  }
+});
+
+</script>
+
+  <!-- popup button -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
@@ -137,42 +188,42 @@
           <div class="col-lg-4 col-md-6">
             <div class="icon-box">
               <div class="icon"><i class="fa-solid fa-pen-fancy"></i></div>
-              <h4 class="title"><a href="">Web & Graphic Design</a></h4>
-              <p class="description">Are you looking to make a striking first impression? Want to captivate your audience with stunning graphics and an intuitive user experience? Look no further! Our exceptional web and graphic design services are tailored to meet your unique needs and elevate your brand to new heights.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="icon-box">
-              <div class="icon"><i class="fa-solid fa-comments-dollar"></i></div>
-              <h4 class="title"><a href="">SEO & Digital Marketing</a></h4>
-              <p class="description">In today's digital age, standing out from the competition and reaching your target audience is no easy task. That's where we come in! At Code Solution Studios, we specialize in delivering specialized SEO and digital marketing strategies that drive unprecedented success.</p>
+              <h4 class="title"><a href="./pricing-pages/wd-price.html">Web Developement</a></h4>
+              <p class="description">Are you looking to make a striking first impression? Want to captivate your audience with stunning graphics and an intuitive user experience? Look no further! Our exceptional <a href="#services">web development & web design services</a> are tailored to meet your unique needs and elevate your brand to new heights.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="icon-box">
               <div class="icon"><i class="fa-solid fa-ranking-star"></i></div>
-              <h4 class="title"><a href="">Branding & Identity</a></h4>
+              <h4 class="title"><a href="./pricing-pages/gd-price.html">Graphic Design</a></h4>
               <p class="description">A strong and memorable brand is the key to success. Are you ready to make an unforgettable impression and build a loyal customer base? At Code Solution Studios, we specialize in crafting compelling branding solutions that will set your business apart and resonate with your target audience. </p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="icon-box">
+              <div class="icon"><i class="fa-solid fa-comments-dollar"></i></div>
+              <h4 class="title"><a href="./pricing-pages/dm-price.html">Digital Marketing</a></h4>
+              <p class="description">In today's digital age, standing out from the competition and reaching your target audience is no easy task. That's where we come in! At Code Solution Studios, we specialize in delivering specialized digital marketing strategies that drive unprecedented success.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
               <div class="icon"><i class="fa-solid fa-chess-queen"></i></div>
-              <h4 class="title"><a href="">Consultation & Strategy</a></h4>
-              <p class="description">In the ever-evolving business landscape, making informed decisions and implementing effective strategies is crucial for staying ahead of the game. At Code Solution Studios, we offer top-notch consultation and strategy services designed to provide you with the insights needed to propel your business to new levels.</p>
+              <h4 class="title"><a href="./pricing-pages/seo-price.html">SEO</a></h4>
+              <p class="description">Are you struggling to attract organic traffic to your website? Is your online presence not delivering the desired results? Don't worry, we have the solution for you. Our professional SEO services are designed to catapult your website to the top of search engine rankings, driving targeted traffic and maximizing your online visibility.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="icon-box">
               <div class="icon"><i class="fa-solid fa-thumbs-up"></i></div>
-              <h4 class="title"><a href="">Social Media Management</a></h4>
+              <h4 class="title"><a href="./pricing-pages/smm-price.html">Social Media Management</a></h4>
               <p class="description">Social media has become an essential platform for businesses to connect with their target audience, build brand awareness, and drive meaningful engagement. At Code Solution Studios, we offer expert social media management services across platforms such as <a href="https://www.facebook.com/codesolutionstudios/" target="_blank">Facebook</a>, <a href="https://www.instagram.com/codesolutionstudios/" target="_blank">Instagram</a>, <a href="" target="_blank">TikTok</a>, <a href="https://www.youtube.com/@CodeSolutionStudios" target="_blank">YouTube</a>, <a href="https://www.linkedin.com/company/96412352/admin/feed/posts/?feedType=following" target="_blank">LinkedIn</a> and <a href="https://twitter.com/cdeslutionstud" target="_blank">Twitter</a> that will help you captivate your audience and strengthen your brand.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="icon-box">
               <div class="icon"><i class="fa-solid fa-photo-film"></i></div>
-              <h4 class="title"><a href="">Video & Content Creation</a></h4>
+              <h4 class="title"><a href="./pricing-pages/vcc-price.html">Video & Content Creation</a></h4>
               <p class="description">Captivating visuals and engaging content are the key ingredients to grabbing attention, building brand affinity, and driving meaningful connections with your target audience. Together, we'll create content that engages, inspires, and drives remarkable results!</p>
             </div>
           </div>
@@ -191,176 +242,33 @@
             <div class="column"><h2>About</h2></div>
             <div class="column"><img class="green flower" src="./assets/img/flowers/green.png" alt=""></div>
           </div>
-          
-          
           <p>At Code Solution Studios, we value excellence and strive for perfection in every project we undertake.</p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2 right">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+        <div class="about-section">
+          <div class="inner-container">
             <h3>Together, let's unlock the power of technology and propel your business to new heights.</h3>
-            <p class="fst-italic">
-              Our dedication to quality ensures that your project is completed on time and within budget, while meeting the highest standards of functionality and performance.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circled"></i>We invite you to explore our website and learn more about our services, portfolio, and success stories.</li>
-              <li><i class="bi bi-check-circled"></i>Whether you are a startup, a small business, or a large enterprise, we are here to help you achieve your digital goals.</li>
-              <li><i class="bi bi-check-circled"></i>Contact us today to discuss your project and prepare to embark on a transformative journey with Code Solution Studios.</li>
-            </ul>
+            
+              <p class="text">
+                <p class="fst-italic">
+                  Our dedication to quality ensures that your project is completed on time and within budget, while meeting the highest standards of functionality and performance.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circled"></i>We invite you to explore our website and learn more about our <a href="#services">services</a>, <a href="#portfolio">portfolio</a>, and success stories.</li>
+                  <li><i class="bi bi-check-circled"></i>Whether you are a startup, a small business, or a large enterprise, we are here to help you achieve your digital goals.</li>
+                  <li><i class="bi bi-check-circled"></i><a href="#contact">Contact us</a> today to discuss your project and prepare to embark on a transformative journey with Code Solution Studios.</li>
+                </ul>
+              </p>
+              <div class="skills">
+                  <span><a href="./pricing-pages/wd-price.html">Web Development</a></span>
+                  <span><a href="./pricing-pages/gd-price.html">Graphic Design</a></span>
+                  <span><a href="./pricing-pages/dm-price.html">Digital Marketing</a></span>
+              </div>
           </div>
-        </div>
+      </div>
 
       </div>
     </section><!-- End About Us Section -->
-
-    <!-- ======= Bundles Section ======= -->
-    <section id="bundles" class="bundles">
-      <div class="section-title">
-        <div class="row">
-          <div class="column"><img class="green flower" src="./assets/img/flowers/grey.png" alt=""></div>
-          <div class="column"><h2>Bundles</h2></div>
-          <div class="column"><img class="green flower" src="./assets/img/flowers/grey.png" alt=""></div>
-        </div>
-      </div>
-      <div class="container">
-
-        <div class="row no-gutters">
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span class="cent">01</span>
-            <div class='container'>
-              <div class='card'>
-                <div class='card__top'>
-                  <i class="fa-solid fa-user-tie"></i>
-                  <h4>Full Website</h4>
-                </div>
-                <div class='card__bottom'>
-                  <ul>
-                      <li>Custom website design and development</li>
-                      <li>Responsive user-friendly and mobile-friendly design</li>
-                      <li>Essential features (contact forms, analytics, etc.)</li>
-                      <li>Search engine optimization (SEO) best practices</li>
-                  </ul>
-                  <div class="btn bundle-btn">
-                    <a href='#services'>Read More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>02</span>
-            <div class='container'>
-              <div class='card'>
-                <div class='card__top'>
-                  <i class="fa-solid fa-share-nodes"></i>
-                  <h4>Get Social</h4>
-                </div>
-                <div class='card__bottom'>
-                    <ul>
-                      <li>Account setup and optimization</li>
-                      <li>Engaging content creation and scheduling</li>
-                      <li>Performance analysis and reporting</li>
-                      <li>Ad campaign management (additional charges apply)</li>
-                    </ul>
-                  <div class="btn bundle-btn">
-                    <a href='#services'>Read More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>03</span>
-            <div class='container'>
-              <div class='card'>
-                <div class='card__top'>
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                  <h4>Get Found</h4>
-                </div>
-                <div class='card__bottom'>
-                    <ul>
-                      <li>SEO & Digital Marketing</li>
-                      <li>Keyword research</li>
-                      <li>Meta tags optimization and content enhancement</li>
-                      <li>Google Analytics and search console setup</li>
-                      <li>Monthly progress reports and performance tracking</li>
-                    </ul>
-                  <div class="btn bundle-btn">
-                    <a href='#services'>Read More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="bundles-info"  style="text-align: center;">
-            <p>Please note we offer customized packages to suit your specific needs and additional services can be added upon request.</p>
-            <p><a href="#contact">Contact us</a> today to discuss your requirements, and we'll provide a detailed proposal tailored to your business goals and budget.</p>
-          </div>
-          
-          <!-- <div class="col-lg-4 col-md-6 content-item">
-            <span>04</span>
-            <div class='container'>
-              <div class='card'>
-                <div class='card__top'>
-                  <i class='fas fa-book'></i>
-                  <h4>Fresh Business</h4>
-                </div>
-                <div class='card__bottom'>
-                  <p>Cascading Style Sheets are an important way to control how your web pages look. CSS controls the fonts, text, colors, backgrounds, margins, and layout.</p>
-                  <div class="btn bundle-btn">
-                    <a href='#'>Read More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>05</span>
-            <div class='container'>
-              <div class='card'>
-                <div class='card__top'>
-                  <i class='fas fa-book'></i>
-                  <h4>Fresh Business</h4>
-                </div>
-                <div class='card__bottom'>
-                  <p>Cascading Style Sheets are an important way to control how your web pages look. CSS controls the fonts, text, colors, backgrounds, margins, and layout.</p>
-                  <div class="btn bundle-btn">
-                    <a href='#'>Read More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>06</span>
-            <div class='container'>
-              <div class='card'>
-                <div class='card__top'>
-                  <i class='fas fa-book'></i>
-                  <h4>Fresh Business</h4>
-                </div>
-                <div class='card__bottom'>
-                  <p>Cascading Style Sheets are an important way to control how your web pages look. CSS controls the fonts, text, colors, backgrounds, margins, and layout.</p>
-                  <div class="btn bundle-btn">
-                    <a href='#'>Read More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-        </div>
-
-      </div>
-    </section><!-- End Bundles Section -->
 
     <!-- ======= Our Clients Section ======= -->
     <section id="clients" class="clients">
@@ -374,37 +282,32 @@
             </div>
           <p>At Code Solution Studios, our success is driven by the success of our clients. We are privileged to have partnered with a diverse range of businesses and organizations across various industries, helping them achieve their digital goals and witness remarkable growth.</p>
         </div>
-
-        <!--<div class="row clients">
-          <div class="column client"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-          <div class="column client"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-          <div class="column client annie"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-          <div class="column client">
-             <div class="card">
-              <div class="image">
-                <img src="./assets/img/clients/question client.jpg">
-              </div>
-              <div class="details">
-                <div class="center">
-                  <h1>Join the list</h1>
-                  <p>Contact Now</p>
-                  <ul>
-                    <li><a href="#contact"><i class="fa-solid fa-square-phone"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div> -->
+        <div class="client-slide">
+  
+          <div class="slider">
+            <div class="slide-track">
+                <div class="slide"><img src="assets/img/clients/client-1.png" class="" alt=""></div>
+                <div class="slide"><img src="assets/img/clients/client-2.png" class="k" alt=""></div>
+                <div class="slide"><img src="assets/img/clients/client-3.png" class="" alt=""></div>
+                <div class="slide"><img src="assets/img/clients/client-4.png" class="" alt=""></div>
+                <div class="slide"><img src="assets/img/clients/client-5.png" class="" alt=""></div>
+                <div class="slide"><img src="assets/img/clients/client-1.png" class="" alt=""></div>
+                <div class="slide"><img src="assets/img/clients/client-2.png" class="k" alt=""></div>
+                <div class="slide"><img src="assets/img/clients/client-3.png" class="" alt=""></div>
+                <div class="slide"><img src="assets/img/clients/client-4.png" class="" alt=""></div>
+                <div class="slide"><img src="assets/img/clients/client-5.png" class="" alt=""></div>
+            </div>
+          </div>
+  
         </div>
-        </div>
-
         <div class="clients-slider swiper">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
             <!-- <div class="swiper-slide"><img src="assets/img/clients/client-.png" class="img-fluid" alt=""></div> -->
-            <div class="swiper-slide question"><a href="#contact"><div class="container"><img src="assets/img/clients/client-6.jpg" class="img-fluid" alt=""><button class="centered">Join The List</button></div></a></div>
+            <div class="swiper-slide question"></div>
             <!-- <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div> -->
           </div>
@@ -436,13 +339,92 @@
             <div class="swiper-slide"><a href="https://nodejs.org/en" target="_blank"><img src="assets/img/tech/nodejs.png" class="img-fluid" alt=""></a></div>
             <div class="swiper-slide"><a href="https://www.google.com/search?q=wordpress&rlz=1C1CHBF_enZA1016ZA1016&oq=wordpress&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg5MgcIAhAAGI8CMgYIAxBFGDwyBggEEEUYPTIGCAUQRRg80gEIMTM1OWowajSoAgCwAgA&sourceid=chrome&ie=UTF-8" target="_blank"><img src="assets/img/tech/wordpress-logo.png" class="img-fluid" alt=""></a></div>
             <div class="swiper-slide"><a href="https://workspace.google.com/intl/en_za/business/?utm_source=google&utm_medium=cpc&utm_campaign=emea-za-all-en-dr-bkws-all-hv-trial-e-t2-1011339&utm_content=text-ad-crnurturectrl-none-DEV_c-CRE_526870345800-ADGP_Hybrid%20%7C%20BKWS%20-%20EXA%20%7C%20Txt%20~%20G%20Suite%20~%20General_GSB01-KWID_43700016350488218-kwd-7564271891-userloc_1029005&utm_term=KW_g%20suite-ST_g%20suite&ds_rl=1244687&ds_rl=1259922&gad=1&gclid=CjwKCAjw44mlBhAQEiwAqP3eVi6lkycVCb3uE6MwwuRlS7RIXZaYhNUQZXSpp_uF9qpP51q6Pg6gXxoCtfcQAvD_BwE&gclsrc=aw.ds" target="_blank"><img src="assets/img/tech/google.png" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://en.wikipedia.org/wiki/Google_Analytics" target="_blank"><img src="assets/img/tech/GAnalytics.svg.png" class="img-fluid" alt=""></a></div>
             <div class="swiper-slide"><a href="https://mailchimp.com/guesswork-campaign/?ds_c=DEPT_AOC_Google_Search_ROET_EN_Brand_Acquire_Exact_0623_T5&gclid=CjwKCAjw44mlBhAQEiwAqP3eVhKcfqntF_iUEBBEytg7GYlA0aVYXq-xjfXH6_oGMr6PI28pWMiZHhoCbskQAvD_BwE&gclsrc=aw.ds" target="_blank"><img src="assets/img/tech/mailchimp.png" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://en.wikipedia.org/wiki/Meta_Platforms" target="_blank"><img src="assets/img/tech/meta.png" class="img-fluid" alt=""></a></div>
+            
           </div>
+          
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
     </section><!-- End Our tech Section -->
+
+    <!-- ======= Bundles Section ======= -->
+    <section id="bundles" class="bundles">
+      <div class="section-title">
+        <div class="row">
+          <div class="column"><img class="green flower" src="./assets/img/flowers/grey.png" alt=""></div>
+          <div class="column"><h2>Bundles</h2></div>
+          <div class="column"><img class="green flower" src="./assets/img/flowers/grey.png" alt=""></div>
+        </div>
+      </div>
+      <div class="container">
+
+        <div class="ag-format-container">
+          <div class="ag-courses_box">
+            <div class="ag-courses_item">
+              <a href="./bundle-pages/fw-bundle.html" class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
+        
+                <div class="ag-courses-item_title">
+                  Whole Website Waxed
+                </div>
+        
+                <div class="ag-courses-item_date-box">
+                  Starting at:
+                  <span class="ag-courses-item_date">
+                    R4999
+                  </span>
+                  <br>
+                  <span class="ag-courses-item_date">Have a piece of the internet that you can be proud of.</span>
+                </div>
+              </a>
+            </div>
+        
+            <div class="ag-courses_item">
+              <a href="./bundle-pages/sms-bundle.html" class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
+        
+                <div class="ag-courses-item_title">
+                  Social Media Supercharge
+                </div>
+        
+                <div class="ag-courses-item_date-box">
+                  Starting at:
+                  <span class="ag-courses-item_date">
+                   R7999
+                  </span> <br>
+                  <span class="ag-courses-item_date">Build brand awareness & engage customers</span>
+                </div>
+              </a>
+            </div>
+        
+            <div class="ag-courses_item">
+              <a href="./bundle-pages/gf-bundle.html" class="ag-courses-item_link">
+                <div class="ag-courses-item_bg"></div>
+        
+                <div class="ag-courses-item_title">
+                  Digital Marketing Madness
+                </div>
+        
+                <div class="ag-courses-item_date-box">
+                  Starting at: 
+                  <span class="ag-courses-item_date">
+                    R7999
+                  </span><br>
+                  <span class="ag-courses-item_date">Boost visibility, outrank competitors & drive more traffic.</span>
+                </div>
+              </a>
+            </div>
+       
+        
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Bundles Section -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
@@ -466,7 +448,7 @@
                 </svg>
                 <i class="fa-solid fa-globe"></i>
               </div>
-              <h4><a href="">Website Development</a></h4>
+              <h4><a href="./pricing-pages/wd-price.html">Website Development</a></h4>
               <p>Our website development services are tailored to create a strong online presence for your business. We develop visually appealing, user-friendly, and responsive websites that engage visitors. Our team combines the latest technologies and industry best practices to ensure your website is optimized for performance, security, and search engine visibility. Whether you need a simple informational website or something more complex, we've got you covered.</p>
             </div>
           </div>
@@ -479,7 +461,7 @@
                 </svg>
                 <i class="fa-solid fa-palette"></i>
               </div>
-              <h4><a href="">Graphic Design</a></h4>
+              <h4><a href="./pricing-pages/gd-price.html">Graphic Design</a></h4>
               <p>Our graphic design services are aimed at creating captivating visual elements that enhance your brand identity. We develop stunning logos, custom illustrations, infographics, and other visual assets that align with your brand and resonate with your audience. Our team of skilled designers combines creativity and strategic thinking to deliver designs that make a lasting impact across various channels.</p>
             </div>
           </div>
@@ -492,8 +474,8 @@
                 </svg>
                 <i class="bx bx-tachometer"></i>
               </div>
-              <h4><a href="">Digital Marketing</a></h4>
-              <p>Our digital marketing services are designed to increase your online visibility, attract quality leads and grow your business. We employ a comprehensive approach that includes search engine optimization (SEO), pay-per-click (PPC) advertising, social media marketing, email marketing, and more. Our strategies are data-driven and tailored to your specific goals, ensuring maximum return on investment and long-term success in the digital landscape.</p>
+              <h4><a href="./pricing-pages/dm-price.html">Digital Marketing</a></h4>
+              <p>Our digital marketing services are designed to increase your online visibility, attract quality leads and grow your business. We employ a comprehensive approach that includes search engine optimisation (SEO), pay-per-click (PPC) advertising, social media marketing, email marketing, and more. Our strategies are data-driven and tailored to your specific goals, ensuring maximum return on investment and long-term success in the digital landscape.</p>
             </div>
           </div>
 
@@ -505,7 +487,7 @@
                 </svg>
                 <i class="bx bx-layer"></i>
               </div>
-              <h4><a href="">Content Creation</a></h4>
+              <h4><a href="./pricing-pages/vcc-price.html">Video & Content Creation</a></h4>
               <p>Compelling and engaging content is essential to captivate your audience and drive meaningful interactions. Our content creation services encompass a wide range of deliverables, including website copy, blog articles, social media posts, newsletters, and more. Our team of skilled writers and editors work closely with you to understand your brand voice and objectives, delivering high-quality content that educates, entertains, and inspires your target audience.</p>
             </div>
           </div>
@@ -516,10 +498,10 @@
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
                   <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
                 </svg>
-                <i class="bx bx-slideshow"></i>
+                <i class="fa-solid fa-wrench"></i>
               </div>
-              <h4><a href="">Video Production</a></h4>
-              <p>Videos have become a powerful medium for storytelling and connecting with audiences. Our video production services cover everything from concept development and scriptwriting to shooting, editing, and post-production. Whether you need promotional videos, product demos, explainer videos, or customer testimonials, our team is equipped with the technical expertise and creative vision to bring your ideas to life.</p>
+              <h4><a href="./pricing-pages/mp-price.html">Maintenance Plans</a></h4>
+              <p>At Code Solution Studios, we understand that a well-functioning website is crucial to your online presence and business growth. Our maintenance plans are designed to take the burden off your shoulders, allowing you to concentrate on what you do best - running your business. Investing in one of our Maintenance Plans means investing in the long-term success of your online presence. With us, you'll enjoy a hassle-free experience, increased productivity, enhanced security, and a website that always delivers exceptional performance.</p>
             </div>
           </div>
 
@@ -531,7 +513,7 @@
                 </svg>
                 <i class="fa-solid fa-chart-line"></i>
               </div>
-              <h4><a href="">Analytics and Reporting</a></h4>
+              <h4><a href="./pricing-pages/ar-price.html">Analytics and Reporting</a></h4>
               <p>Understanding the performance of your digital initiatives is crucial for making informed business decisions. Our analytics and reporting services help you gain valuable insights into your website traffic, user behavior, campaign effectiveness, and more. We set up tracking tools, analyze data, and generate comprehensive reports that provide actionable recommendations to optimize your digital strategies and achieve your marketing goals.</p>
             </div>
           </div>
@@ -617,11 +599,25 @@
             <div class="portfolio-wrap">
               <img src="assets/img/clients/client-3.png" class="img-fluid annie-port" alt="">
               <div class="portfolio-info">
-                <h4>Annie's Social & Health</h4>
+                <h4>Annie's Social & Health Care</h4>
                 <p>Website & Graphic Design</p>
                 <div class="portfolio-links">
                   <a href="assets/img/clients/client-3.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
                   <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web filter-graphic">
+            <div class="portfolio-wrap">
+              <img src="./assets/img/clients/client-5.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Crater Bush Villa</h4>
+                <p>Website, SEO, Graphic Design</p>
+                <div class="portfolio-links">
+                  <a href="./assets/img/clients/client-5.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                  <a href="client-testing/CBV/index.html" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -635,7 +631,7 @@
                 <p>Content Creation</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/CSS Youtube.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                  <a href="port-pages/videos-page.html" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -655,21 +651,9 @@
             </div>
           </div>
 
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+          
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <!--<div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -837,8 +821,34 @@
                     <input type="text" class="field" placeholder="Name" name="name" id="name" required>
                     <input type="email" class="field" placeholder="Email" name="email" id="email" required>
                     <input type="tel" class="field" placeholder="Phone" name="tel-number" id="tel" required>
+                    <select name="service" class="field" id="service">
+                      <option value="service">Select a Service/Bundle</option>
+                      <optgroup label="Services">
+                        <option value="web-dev">Web Development</option>
+                        <option value="graphic-design">Graphic Design</option>
+                        <option value="digital-marketing">Digital Marketing</option>
+                        <option value="SEO">SEO</option>
+                        <option value="content-creation">Social Media Management</option>
+                        <option value="content-creation">Content Creation</option>
+                        <option value="video-production">Video Production</option>
+                        <option value="analytics">Analytics & Reporting</option>
+                        <option value="analytics">Maintenance Plans</option>
+                      </optgroup>
+                      <optgroup label="Bundles">
+                        <option value="fulle-website">Whole Website Waxed</option>
+                        <option value="get-social">Social Media Supercharge</option>
+                        <option value="get-found">Digital Marketing Madness</option>
+                      </optgroup>
+                    </select>
+                      <select name="maintenance" class="field" id="maintenance">
+                        <option value="maintenance">Select a Plan Level</option>
+                        <option value="essential">Essential</option>
+                        <option value="advanced">Advanced</option>
+                        <option value="premium">Premium</option>
+                      </select>
+                    
                     <textarea placeholder="Message" class="field" name="message" required id="text"></textarea>
-                    <button type="submit" class="btn button" onclick="submitForm(event)" id="button" disabled><span class="button__text">Send</span></button>
+                    <button type="submit" class="btn button" id="button"><span class="button__text">Send</span></button>
                   </div>
                 </div>
               </div>
@@ -855,7 +865,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <img class="footer-logo" src="./assets/favicon/CSS_Logo-no_text-removebg-preview.png" alt="">
+      <img class="footer-logo" src="assets/img/branding/big-flower.png" alt="">
       <div class="row">
         <div class="column"><img class="green flower" src="./assets/img/flowers/pinkish.png" alt=""></div>
         <div class="column"><h3>Code Solution Studios</h3></div>
@@ -871,17 +881,7 @@
         <a href="https://www.youtube.com/@CodeSolutionStudios" class="youtube" target="_blank"><i class="bx bxl-youtube"></i></a>
         <a href="https://www.linkedin.com/company/96412352/admin/feed/posts/?feedType=following" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
       </div>
-
-      <div class="copyright">
-        &copy; Copyright <strong><span>Code Solution Studios</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Created by <a href="#">Code Solution Studios</a>
-        <div>A Proudly South African Company. <div class="pixel-flag"><img src="./assets/img/pixel flag.gif" alt=""></div></div>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
+  <!-- End Footer -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->

@@ -319,3 +319,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+
+
+// Blog  o
