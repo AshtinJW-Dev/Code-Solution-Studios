@@ -322,4 +322,48 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Blog  o
+// newsletter
+document.addEventListener("DOMContentLoaded", function() {
+  $(document).mousemove(function (e) {
+    var mX = e.pageX;
+    var mY = e.pageY;
+    var from = { x: mX, y: mY };
+    var $n = $('.signup-btn');
+    var off = $n.offset(),
+      nx1 = off.left,
+      ny1 = off.top,
+      nx2 = nx1 + $n.outerWidth(),
+      ny2 = ny1 + $n.outerHeight(),
+      maxX1 = Math.max(mX, nx1),
+      minX2 = Math.min(mX, nx2),
+      maxY1 = Math.max(mY, ny1),
+      minY2 = Math.min(mY, ny2),
+      intersectX = minX2 >= maxX1,
+      intersectY = minY2 >= maxY1,
+      to = {
+        x: intersectX ? mX : nx2 < mX ? nx2 : nx1,
+        y: intersectY ? mY : ny2 < mY ? ny2 : ny1
+      };
+    var distX = to.x - from.x,
+      distY = to.y - from.y,
+      hypot = Math.sqrt(distX * distX + distY * distY);
+    var final = Math.round(hypot);
+
+    $('#distance_text').text(final); // this will output the distance in pixels.
+
+    if (final == 0) {
+      // When the mouse is over the button
+      $('#news').addClass('active');
+    } else {
+      // When the mouse is not directly over the button
+      $('#news').removeClass('active');
+    }
+  });
+  trackMouseDistance();
+});
+function trackMouseDistance() {
+ 
+}
+
+// Call the function to start tracking the mouse distance
+trackMouseDistance();
