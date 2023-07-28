@@ -26,6 +26,9 @@
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
 
+  <!-- Template JS File -->
+  <script src="../assets/js/temps/temps.js" > </script>
+
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -67,7 +70,6 @@
   
       <!-- Navbar Temp -->
     <span id="navbar"></span>
-    <script src="../assets/js/temps/temps.js" > </script>
     <script>
       document.getElementById('navbar').innerHTML = dynamicData.navbarRest;
     </script>
@@ -77,7 +79,6 @@
   </header><!-- End Header -->
   
    <!-- popup button -->
-
 
    <div id="popupForm" class="modal">
     <div class="modal-content">
@@ -97,37 +98,6 @@
       </form>
     </div>
   </div>
-<script>
-
-// Get the modal element
-var modal = document.getElementById("popupForm");
-
-// Get the button that opens the modal
-var openBtn = document.getElementById("openFormBtn");
-
-// Get the close button element
-var closeBtn = document.getElementsByClassName("close")[0];
-
-// Function to open the modal
-function openModal() {
-  modal.style.display = "block";
-}
-
-// Function to close the modal
-function closeModal() {
-  modal.style.display = "none";
-}
-
-// Event listeners
-openBtn.addEventListener("click", openModal);
-closeBtn.addEventListener("click", closeModal);
-window.addEventListener("click", function(event) {
-  if (event.target === modal) {
-    closeModal();
-  }
-});
-
-</script>
 
   <!-- popup button -->
 
@@ -356,7 +326,6 @@ window.addEventListener("click", function(event) {
     <!-- ======= Contact Section ======= -->
     <!-- Contact Temp -->
     <span id="contact-temp"></span>
-    <script src="../assets/js/temps/temps.js" > </script>
     <script>
       document.getElementById('contact-temp').innerHTML = dynamicData.contact;
     </script>
@@ -366,7 +335,6 @@ window.addEventListener("click", function(event) {
 
   <!-- ======= Footer ======= -->
   <span id="footer"></span>
-      <script src="assets/js/temps/temps.js" > </script>
       <script>
         document.getElementById('footer').innerHTML = dynamicData.footer;
       </script> <!-- End Footer -->
