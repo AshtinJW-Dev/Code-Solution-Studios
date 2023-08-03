@@ -470,14 +470,8 @@ a:hover {
   margin-left: 0px;
 }
 
-.intro-carousel .swiper-wrapper{
-  padding-top: 20vh;
-}
 
-.intro-carousel .swiper-wrapper .swiper-slide{
-  
-  height: 40rem;
-}
+
 
 /*------/ Socials /------*/
 .socials-a {
@@ -670,11 +664,7 @@ a:hover {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   box-shadow: 1px 2px 15px rgba(100, 100, 100, 0.3);
-}
-
-.navbar-default .nav-search {
-  color: #000000;
-  font-size: 1.5rem;
+  padding: 0;
 }
 
 .navbar-default.navbar-reduce {
@@ -769,8 +759,6 @@ a:hover {
 
 .navbar-default.navbar-reduce {
   transition: all 0.5s ease-in-out;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .navbar-default.navbar-reduce .nav-link {
@@ -845,6 +833,17 @@ a:hover {
   opacity: 1;
   filter: alpha(opacity=1);
 }
+
+/* logo */
+.nav-logo{
+  width: 10rem;
+  height: auto;
+}
+
+a.navbar-brand.text-brand{
+  padding: 0;
+}
+
 
 /*------/ Hamburger Navbar /------*/
 .navbar-toggler {
@@ -1023,7 +1022,7 @@ a:hover {
 # Hero Section
 --------------------------------------------------------------*/
 .intro {
-  height: 80vh;
+  
   position: relative;
   color: #ffffff;
 }
@@ -1047,16 +1046,21 @@ a:hover {
 }
 
 .intro .intro-item {
-  padding-top: 2rem;
-}
-
-.intro .carousel-item-a {
-  position: relative;
-  height: 100vh;
+padding-top: 10rem;
 }
 
 .intro .carousel-item-a.bg-image {
   background-attachment: scroll;
+}
+
+.hero-container{
+  padding-top: 20vh;
+  width: 100%;
+}
+
+.hero-pic img{ 
+ width: 100%;
+ height: 100%;
 }
 
 .intro .intro-content {
@@ -1527,6 +1531,7 @@ a:hover {
     font-size: 1rem;
   }
 }
+
 
 .card-overlay {
   position: absolute;
@@ -2574,10 +2579,6 @@ form .field:focus{
   background-position: center center;
   text-align: center;
   padding-top: .2rem;
-  background-color: #F7E3D0;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 
-              0 6px 20px rgba(0, 0, 0, 0.15),
-              0 6px 20px rgba(0, 0, 0, 0.7);
 }
 .image img{
   height: 99%;
@@ -2649,6 +2650,16 @@ form .field:focus{
   .image-row .image {
     flex-basis: auto;
   }
+}
+
+.image .card-box-a{
+  height: 100%;
+  object-fit:fill;
+}
+.image .card-box-a img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 /*--------------------------------------------------------------
