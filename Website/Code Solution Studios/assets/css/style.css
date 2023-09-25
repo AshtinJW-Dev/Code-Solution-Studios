@@ -696,6 +696,91 @@ h6 {
   height: 5rem;
 }
 
+/* about Developer Text */
+
+.about .type-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(2rem, 2.8vw, 5rem);
+  font-weight: bold;
+}
+
+.about .typewriter {
+	width: 21.5ch;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 4px solid #212121;
+	animation: cursor 1s step-start infinite, 
+    text 4s steps(10) alternate infinite;
+}
+
+@keyframes cursor {
+	0%, 100% { 
+    border-color: #212121; 
+  }
+}
+
+@keyframes text {
+	0% { 
+    width: 0; 
+  }
+	100% { 
+    width: 11.5ch; 
+  }
+}
+
+/* ampersand effects */
+
+.about .amper{
+  text-align: center;
+  font-weight: bold;
+}
+
+/* about design text */
+
+/* Positioning */
+
+.design .container {
+	min-height: 100%;
+  text-align: center;
+}
+
+
+.design .apple {
+	
+	/* Text Background Effect */
+	
+	background: url('http://doodling.surge.sh/assets/images/bg-1.jpg');
+	-webkit-background-clip: text;
+	color: transparent;
+
+	/* Other */
+	
+	font-size: 50px;
+	font-weight: 900;
+	animation: slice 3s, dynamic 7s infinite alternate linear;
+	white-space: nowrap;
+	
+}
+
+@media screen and (max-width: 480px) {
+	.apple {
+		font-size: 70px;
+	}
+}
+
+/* Dynamic Background Animation */
+
+@keyframes dynamic {
+	
+	0% {	background-position: 0% }
+	
+	100% {	background-position: 100%; }
+	
+}
+
+
 /* other about */
 
 .about {
@@ -1655,6 +1740,7 @@ h6 {
   }
 }
 
+/* Form Styling */
 form .container {
   position: relative;
   width: 100%;
@@ -1715,7 +1801,7 @@ form h2:after {
 }
 
 form .field {
-  width: 100%;
+  width: 90%;
   border: 2px solid rgba(0, 0, 0, 0);
   outline: none;
   background-color: rgba(230, 230, 230, 0.6);
@@ -1728,6 +1814,108 @@ form .field {
 form .field:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
+
+  /* radio button styling */
+  @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,400i,700");
+  form .main-container 
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  form .main-container h2 
+  {
+    margin: 0 0 80px 0;
+    color: #555;
+    font-size: 30px;
+    font-weight: 300;
+  }
+  
+  form .radio-buttons 
+  {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  form .custom-radio input 
+  {
+    display: none;
+  }
+  
+  form .radio-btn 
+  {
+    margin: 10px;
+    width: 160px;
+    height: 180px;
+    border: 3px solid transparent;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px #c3c3c367;
+    cursor: pointer;
+  }
+  
+  form .radio-btn > i {
+    color: #ffffff;
+    background-color: #2ecc71;
+    font-size: 20px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) scale(2);
+    border-radius: 50px;
+    padding: 3px;
+    transition: 0.5s;
+    pointer-events: none;
+    opacity: 0;
+  }
+  
+  form .radio-btn .hobbies-icon 
+  {
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  form .radio-btn .hobbies-icon img
+  {
+    display:block;
+    width:100%;
+    margin-bottom:20px;
+    
+  }
+  form .radio-btn .hobbies-icon i 
+  {
+    color: #2ecc71;
+    line-height: 80px;
+    font-size: 60px;
+  }
+  
+  form .radio-btn .hobbies-icon h3 
+  {
+    color: #555;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing:1px;
+  }
+  
+  form .custom-radio input:checked + .radio-btn 
+  {
+    border: 2px solid #2ecc71;
+  }
+  
+  form .custom-radio input:checked + .radio-btn > i 
+  {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+  
 
 form textarea {
   min-height: 150px;
@@ -1743,6 +1931,7 @@ form .btn {
   outline: none;
   cursor: pointer;
   transition: 0.3s;
+  border-radius: 20px;
 }
 
 form .btn:hover {
@@ -1754,6 +1943,10 @@ form .field:focus {
   background-color: #fff;
 }
 
+progress{
+  accent-color: #27ae60;
+}
+
 @media screen and (max-width: 880px) {
   .contact-box {
     grid-template-columns: 1fr;
@@ -1762,6 +1955,9 @@ form .field:focus {
     height: 200px;
   }
 }
+/* End form styling */
+
+
 
 /* laoding animation */
 .button {
