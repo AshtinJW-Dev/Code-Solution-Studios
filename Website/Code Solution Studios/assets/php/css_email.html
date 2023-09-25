@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        margin: 0px;
+        background-color: #f2f3f8;
+        background-color: #eaeeef;
+      }
+
+      .background {
+        background-color: #f2f3f8;
+        max-width: 670px;
+        margin: 0 auto;
+        width: 100%;
+        border: 0;
+        text-align: center;
+      }
+      .spacer {
+        height: 30px;
+      }
+      .container {
+        width: 95%;
+        max-width: 600px;
+        background: #fff;
+        border-radius: 3px;
+        text-align: left;
+        -webkit-box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.06);
+        -moz-box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.06);
+        box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.06);
+      }
+      .tablePad {
+        padding: 40px;
+      }
+      h1 {
+        color: #1e1e2d;
+        font-weight: 500;
+        margin: 0;
+        font-size: 32px;
+        font-family: "Rubik", sans-serif;
+      }
+      p {
+        font-size: 15px;
+        color: #455056;
+        line-height: 24px;
+        margin: 8px 0 30px;
+      }
+      .tableRows {
+        border-bottom: 1px solid #ebebeb;
+        margin-bottom: 26px;
+        padding-bottom: 29px;
+        display: block;
+      }
+      .iconCon {
+        width: 84px;
+      }
+      .iconLink {
+        height: 64px;
+        width: 64px;
+        text-align: center;
+        display: block;
+      }
+      .iconLink i {
+        font-size: 55px;
+        color: #5cb874;
+      }
+      h3 {
+        color: #4d4d4d;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 3px;
+        margin-top: 0;
+      }
+      .botText {
+        text-align: center;
+      }
+      p {
+        font-size: 15px;
+        color: #455056;
+        line-height: 24px;
+        margin: 8px 0 30px;
+      }
+      a {
+        color: #485696;
+      }
+    </style>
+  </head>
+
+  <body marginheight="0" topmargin="0" marginwidth="0" leftmargin="0">
+    <!--100% body table-->
+    <table
+      cellspacing="0"
+      border="0"
+      cellpadding="0"
+      width="100%"
+      bgcolor="#f2f3f8"
+      style="
+        @import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,700|Open+Sans:300,400,600,700);
+        font-family: 'Open Sans', sans-serif;
+      "
+    >
+      <tr>
+        <td>
+          <table class="background" cellpadding="0" cellspacing="0">
+            <tr>
+              <td class="spacer">&nbsp;</td>
+            </tr>
+            <tr>
+              <td style="text-align: center">
+                <a
+                  href="https://codesolutionstudios.co.za"
+                  title="logo"
+                  target="_blank"
+                >
+                  <img
+                    width="60"
+                    src="https://codesolutionstudios.co.za/assets/img/branding/big-flower.svg"
+                    title="logo"
+                    alt="logo"
+                  />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="spacer">&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <table
+                  class="container"
+                  border="0"
+                  align="center"
+                  cellpadding="0"
+                  cellspacing="0"
+                >
+                  <tr>
+                    <td class="tablePad">
+                      <table
+                        width="100%"
+                        border="0"
+                        align="center"
+                        cellpadding="0"
+                        cellspacing="0"
+                      >
+                        <tr>
+                          <td>
+                            <h1>Good day, {client}.</h1>
+                            <p>A form on your website has been submitted!</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table
+                              width="100%"
+                              border="0"
+                              align="center"
+                              cellpadding="0"
+                              cellspacing="0"
+                            >
+                              <tr class="tableRows">
+                                <td class="iconCon">
+                                  <a class="iconLink">
+                                    <i class="fa-solid fa-person"></i>
+                                  </a>
+                                </td>
+                                <td>
+                                  <h3><strong>Name:</strong> {name}</h3>
+                                </td>
+                              </tr>
+                              <tr class="tableRows">
+                                <td class="iconCon">
+                                  <a class="iconLink">
+                                    <i class="fa-solid fa-envelope"></i>
+                                  </a>
+                                </td>
+                                <td>
+                                  <h3><strong>Email:</strong> {email}</h3>
+                                </td>
+                              </tr>
+                              <tr class="tableRows">
+                                <td class="iconCon">
+                                  <a class="iconLink">
+                                    <i class="fa-solid fa-phone"></i>
+                                  </a>
+                                </td>
+                              </tr>
+                              <tr class="tableRows">
+                                <td class="iconCon">
+                                  <a class="iconLink">
+                                    <i class="fa-solid fa-check"></i>
+                                  </a>
+                                </td>
+                                <td>
+                                  <h3><strong>Choice:</strong> {radio}</h3>
+                                </td>
+                              </tr>
+                              <tr class="tableRows">
+                                <td class="iconCon">
+                                  <a class="iconLink">
+                                    <i class="fa-solid fa-message"></i>
+                                  </a>
+                                </td>
+                                <td>
+                                  <h3><strong>Message:</strong> {message}</h3>
+                                </td>
+                              </tr>
+                            </table>
+                            <div class="botText">
+                              <p>
+                                Great Job on getting a from submission. You can do this! CSS For The Win. <br />
+                                Have a great day!
+                              </p>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="spacer">&nbsp;</td>
+            </tr>
+            <tr>
+              <td style="text-align: center">
+                <p>
+                  &copy;
+                  <strong
+                    ><a href="https://codesolutionstudios.co.za/"
+                      >Code Solution Studios</a
+                    ></strong
+                  >
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="height: 80px">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
